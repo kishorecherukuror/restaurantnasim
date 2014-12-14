@@ -11,4 +11,5 @@ private
 		@current_user ||= TwitterUser.find(session[:t_user_id]) if session[:t_user_id]
 	end
 	helper_method :current_user
+
 end

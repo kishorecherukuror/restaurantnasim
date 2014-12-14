@@ -34,6 +34,8 @@ google.maps.event.addDomListener(window, 'load', initialize);
 <div  class="pull-right col-md-6">
 	<div id="type"><%= select_tag "selec_type", options_for_select([ ["Mcdonald's","Mcdonald's"], ["supermacs","supermacs" ]]), prompt: "Select something", :onchange=>"show_bellow();" %></div>
 	<div class="display" id="city">	<%= select_tag "select_city", options_for_select(@cities), prompt: "Select City", :onchange=>"show_image();" %></div>
+<h1><%= current_user.inspect %></h1>
+
 	<div class="display" id="image" ><img id="display_image"  width="500px" src="/assets/city/Kolhapur.jpg"></div>
 	<div class="display" id="button" class="bs-example" style="margin-top:20px">
     <div class="btn-group" data-toggle="buttons">
